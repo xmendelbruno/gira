@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giras de Estudios</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+    }
+    .navbar-vertical {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      background-color: #000;
+      color: #fff;
+      border-right: 1px solid #dee2e6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+    .navbar-vertical .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+    }
+    .navbar-vertical .nav-link {
+      color: #fff;
+    }
+    .navbar-vertical .nav-link:hover {
+      background-color: #333;
+    }
+    .profile-img2 {
+	  margin-bottom: 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      background-color: #b7fdff;
+      margin-bottom: 0px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-img2 img {
+      width: 120px;
+      height: 120px;
+      display: block;
+      object-fit: cover;
+    }
+	.profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      background-color: #b7fdff;
+      margin-bottom: 0px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-img img {
+      width: 120px;
+      height: 120px;
+      display: block;
+      object-fit: cover;
+    }
+    .main-content {
+      margin-left: 200px;
+      padding: 20px;
+      width: calc(100% - 200px);
+    }
+    .header-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Página de Inicio de Sesión</title>
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background-color: #f4f0e9;
+				font-family: Arial, sans-serif;
+			}
+			.login-container {
+				text-align: center;
+				background-color: #f4f0e9;
+				padding: 30px;
+				border-radius: 10px;
+			}
+			.login-container img {
+				border-radius: 100%;
+				width: 170px;
+				height: 170px;
+			}
+			.login-container input[type="text"],
+			.login-container input[type="password"] {
+				width: 80%;
+				padding: 10px;
+				margin: 10px 0;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+			.login-container input[type="submit"] {
+				width: 80%;
+				padding: 10px;
+				margin: 20px 0;
+				background-color: #000000;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: background-color 0.3s, color 0.3s; /* Añadir transición para suavizar el efecto de hover */
+			}
+			.login-container input[type="submit"]:hover {
+				background-color: #444444; /* Cambiar color de fondo al pasar el cursor */
+			}
+			.login-container a {
+				color: #160202;
+				text-decoration: none;
+				transition: color 0.3s, text-decoration 0.3s; /* Añadir transición para suavizar el efecto de hover */
+			}
+			.login-container a:hover {
+				color: #000000; /* Cambiar color de texto al pasar el cursor */
+				text-decoration: underline; /* Subrayar el texto al pasar el cursor */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="login-container">
+			<img src="../img/avion2.png" alt="Avión">
+			<form action="/login" method="post">
+				<input type="text" name="usuario" placeholder="USUARIO" required>
+				<input type="password" name="contrasena" placeholder="CONTRASEÑA" required>
+				<a href="/forgot-password">
+				<br>
+				Olvidé mi contraseña</a>
+				<br>
+				<input type="submit" value="Iniciar sesión">
+			</form>
+		</div>
+	</head>
+  
+  <nav class="navbar navbar-vertical">
+    <div class="profile-img">
+      <!-- Imagen de perfil -->
+      <img src="../img/AVION.png" alt="Perfil" class="img-fluid">
+    </div>
+    <a class="navbar-brand text-white" href="#">OntourTon</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="perfil.html">Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mensajes.html">Mensajes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactanos.html">Contáctanos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="experiencias.html">Experiencias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="iniciarsesion.html">Iniciar Sesión</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cerrarsesion.html">Cerrar sesión</a>
+      </li>
+    </ul>
+ 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

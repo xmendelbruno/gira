@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giras de Estudios</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      overflow-y: scroll; 
+    }
+    .header-image img {
+      width: 100%;
+      height: auto;
+      max-height: 200px; 
+      object-fit: cover;
+    }
+    .navbar-vertical {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      background-color: #000;
+      color: #fff;
+      border-right: 1px solid #dee2e6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+    .navbar-vertical .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+    }
+    .navbar-vertical .nav-link {
+      color: #fff;
+    }
+    .navbar-vertical .nav-link:hover {
+      background-color: #333;
+    }
+    .profile-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+    .main-content {
+      margin-left: 200px;
+      padding: 20px;
+      width: calc(100% - 200px);
+      overflow: auto; /* Permitir el desplazamiento en el contenido principal */
+      margin-top: 10px; /* Ajusta este margen para que el contenido quede debajo de la imagen del encabezado */
+    }
+    .destination-card img {
+      width: 100%;
+      height: auto;
+    }
+    .destination-card .card-body {
+      text-align: center;
+    }
+    .destination-card .card-body a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .destination-card .card-body a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-image">
+    <img src="../img/panel.PNG" alt="Giras de Estudios">
+  </div>
+  
+  <nav class="navbar navbar-vertical">
+    <div class="profile-img">
+      <!-- Imagen de perfil -->
+      <img src="../img/AVION.png" alt="Perfil" class="img-fluid">
+    </div>
+    <a class="navbar-brand text-white" href="#">OntourTon</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="perfil.html">Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mensajes.html">Mensajes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactanos.html">Contáctanos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="experiencias.html">Experiencias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="iniciarsesion.html">Iniciar Sesión</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cerrarsesion.html">Cerrar sesión</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">Bienvenidos a OntourTon</h1>
+          <p class="text-center">Gestión y coordinación de giras de estudios de manera eficiente y segura.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card destination-card">
+            <img src="../img/sur.jpg" class="card-img-top" alt="Sur de Chile">
+            <div class="card-body">
+              <h5 class="card-title">Sur de Chile</h5>
+              <p class="card-text">Ven y disfruta del maravilloso sur de Chile.</p>
+              <a href="Sur De Chile.html">Más información</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card destination-card">
+            <img src="../img/brasil.jpg" class="card-img-top" alt="Brasil">
+            <div class="card-body">
+              <h5 class="card-title">Brasil</h5>
+              <p class="card-text">Explora la vibrante cultura y playas de Brasil.</p>
+              <a href="Brasil.html">Más información</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card destination-card">
+            <img src="../img/bariloche.webp" class="card-img-top" alt="Bariloche">
+            <div class="card-body">
+              <h5 class="card-title">Bariloche</h5>
+              <p class="card-text">Aventura y paisajes impresionantes en Bariloche.</p>
+              <a href="Bariloche.html">Más información</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card destination-card">
+            <img src="../img/laserena.jpg" class="card-img-top" alt="La Serena">
+            <div class="card-body">
+              <h5 class="card-title">La Serena</h5>
+              <p class="card-text">Relájate en las hermosas playas de La Serena.</p>
+              <a href="La Serena.html">Más información</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

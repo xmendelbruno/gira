@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giras de Estudios</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      overflow-y: scroll;
+    }
+    .header-image img {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .navbar-vertical {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      background-color: #000;
+      color: #fff;
+      border-right: 1px solid #dee2e6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+    .navbar-vertical .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+    }
+    .navbar-vertical .nav-link {
+      color: #fff;
+    }
+    .navbar-vertical .nav-link:hover {
+      background-color: #333;
+    }
+    .profile-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+    .main-content {
+      margin-left: 200px;
+      padding: 20px;
+      width: calc(100% - 200px);
+      overflow: auto;
+      margin-top: 10px;
+    }
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .card-container {
+      display: flex;
+      border: 2px solid #000000;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card-container .image-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .card-container .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+    .card-container .text-container {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-container .text-container p {
+      margin: 0 0 10px 0;
+    }
+    .card-container .text-container .price {
+      font-weight: bold;
+      color: #ff5722;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-image">
+    <img src="../img/panel.PNG" alt="Giras de Estudios">
+  </div>
+  
+  <nav class="navbar navbar-vertical">
+    <div class="profile-img">
+      <!-- Imagen de perfil -->
+      <img src="../img/AVION.png" alt="Perfil" class="img-fluid">
+    </div>
+    <a class="navbar-brand text-white" href="#">OntourTon</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="perfil.html">Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mensajes.html">Mensajes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactanos.html">Contáctanos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="experiencias.html">Experiencias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="iniciarsesion.html">Iniciar Sesión</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cerrarsesion.html">Cerrar sesión</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <div class="content-wrapper">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="../img/laserena.jpg" alt="La Serena">
+        </div>
+        <div class="text-container">
+          <h5>La Serena</h5>
+          <p>Descubre La Serena, una joya costera en el norte de Chile conocida por sus playas doradas, arquitectura colonial, y cielos despejados ideales para la observación astronómica. Recorre su centro histórico, disfruta de su gastronomía marina, y explora el valle de Elqui con sus viñedos y paisajes desérticos. Una experiencia que mezcla la tranquilidad del mar con la aventura del desierto.</p>
+          <p class="price">Valor de Gira: $1.000.000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
